@@ -1,0 +1,12 @@
+@EndUserText.label : 'Database for Movies'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztable_movies {
+
+  key client   : abap.clnt not null;
+  key id_movie : abap.int4 not null;
+  title        : abap.char(100);
+
+}
