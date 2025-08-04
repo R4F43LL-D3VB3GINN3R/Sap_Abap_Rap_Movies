@@ -1,0 +1,22 @@
+managed implementation in class zbp_dd_r_movies unique;
+strict ( 1 );
+
+define behavior for ZDD_R_MOVIES alias Movie
+persistent table ztable_movies
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly : update ) IdMovie;
+
+  mapping for ztable_movies corresponding {
+
+   IdMovie = id_movie;
+   Title   = title;
+  }
+
+}
