@@ -1,4 +1,4 @@
-managed implementation in class zbp_dd_r_movies unique;
+managed implementation in class zbp_dd_r_movies unique; 
 strict ( 1 );
 
 define behavior for ZDD_R_MOVIES alias Movie
