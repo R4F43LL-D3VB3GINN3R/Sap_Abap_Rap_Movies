@@ -1,4 +1,4 @@
-managed implementation in class zbp_dd_r_movies unique; 
+managed implementation in class zbp_dd_r_movies unique;
 strict ( 1 );
 
 define behavior for ZDD_R_MOVIES alias Movie
@@ -15,8 +15,16 @@ authorization master ( instance )
 
   mapping for ztable_movies corresponding {
 
-   IdMovie = id_movie;
-   Title   = title;
+   IdMovie   = id_movie;
+   Title     = title;
+   Country   = country;
+   Phone     = phone;
+   Email     = email;
+   Gender    = gender;
+   Website   = website;
+   CreatedBy = createdby;
+   CreatedAt = createdat;
+   ChangedBy = changedby;
+   ChangedAt = changedat;
   }
-
 }
