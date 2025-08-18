@@ -3,6 +3,15 @@
 @Metadata.ignorePropagatedAnnotations: true
 define root view entity ZDD_R_MOVIES as select from ztable_movies
 {
-   key id_movie as IdMovie,
-       title    as Title
+   key id_movie  as IdMovie,
+       title     as Title,
+       country   as Country,
+       phone     as Phone,
+       email     as Email,
+       gender    as Gender,
+       website   as Website,
+       createdby as CreatedBy,
+       createdat as CreatedAt,
+       changedby as ChangedBy,
+       changedat as ChangedAt
 }
