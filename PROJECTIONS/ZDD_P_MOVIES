@@ -1,0 +1,10 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Projection for Movies'
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+define root view entity ZDD_P_MOVIES
+  provider contract transactional_query as projection on ZDD_R_MOVIES
+{
+   key IdMovie,
+       Title
+}
