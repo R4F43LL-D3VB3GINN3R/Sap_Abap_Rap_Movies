@@ -1,0 +1,13 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: { 
+    typeName: 'Movie',
+    typeNamePlural: 'Movies',
+    title.value: 'Title',
+    description.value: 'Title'
+
+}
+annotate view ZDD_P_MOVIES with 
+{ 
+    @UI.hidden: true
+    IdMovie;
+}
