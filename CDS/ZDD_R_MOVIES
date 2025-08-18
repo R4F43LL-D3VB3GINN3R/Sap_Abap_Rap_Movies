@@ -1,0 +1,8 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'CDS for Movies'
+@Metadata.ignorePropagatedAnnotations: true
+define root view entity ZDD_R_MOVIES as select from ztable_movies
+{
+   key id_movie as IdMovie,
+       title    as Title
+}
